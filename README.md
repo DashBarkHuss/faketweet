@@ -1,7 +1,6 @@
 # faketweet
 
-![](Screen Shot 2022-08-20 at 10.38.38 PM.png)
-![Farmers Market Finder Demo](demo/demo.gif)
+![example](example.png)
 
 Current problems:
 1. The MutationObserver will randomly slop working after a while. You can test to see if the mutation observer works by running in the console:
