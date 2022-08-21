@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "version": "1.00",
+  "name": "DreamyTest",
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content_intertTweetWithFeedObserver.js"],
+      "run_at": "document_end"
+    }
+  ],
+
+  "web_accessible_resources": [
+    { "resources": ["buttonStyles.js"], "matches": ["<all_urls>"] }
+  ],
+  "action": {
+    "default_icon": "icon.png"
+  }
+}
