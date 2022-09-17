@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "version": "1.00",
-  "name": "DreamyTest",
+  "name": "Fake tweet",
   "content_scripts": [
     {
       "matches": ["<all_urls>"],
@@ -11,7 +11,10 @@
   ],
 
   "web_accessible_resources": [
-    { "resources": ["buttonStyles.js"], "matches": ["<all_urls>"] }
+    {
+      "resources": ["buttonStyles.js", "sampleTweets.js"],
+      "matches": ["<all_urls>"]
+    }
   ],
   "action": {
     "default_icon": "icon.png"
