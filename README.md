@@ -4,9 +4,9 @@
 
 Current problems:
 
-1. The MutationObserver will randomly slop working after a while. You can test to see if the mutation observer works by running in the console:
+1. The MutationObserver will randomly slop working after a while.The only way to fix the MutationObserver once it stop working is to quit chrome.
 
-### UPDATE: This Mutation Observer test isn't working for me anymore.
+I used to be able to run this code in the console on the browser to test if MutationObserver stopped working. But now this test code isn't working. It seems to be always triggering. But I'm leaving it here anyways for now.:
 
 ```javascript
 const newDiv = document.createElement("div");
@@ -32,8 +32,6 @@ allChanges2.observe(newDiv, {
 // create new child
 newDiv.appendChild(document.createElement("div"));
 ```
-
-The only way to fix the MutationObserver once it stop working is to quit chrome.
 
 ## Make a fake tweet
 
